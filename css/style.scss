@@ -5,6 +5,7 @@
     --desaturatedBlue: hsl(224, 23%, 55%);
     --viole: rgb(45, 43, 143);
     --darkBlue: hsl(223, 47%, 23%);
+    --width: 375px;
     --fontSize: 16px;
     --fontFamily: "Red Hat Display";
     --fontWeightBig: 900;
@@ -55,7 +56,7 @@ body {
 // }
 .card {
     position: relative;
-    width: 375px;
+    width: var(--width);
     margin: 100px auto;
     display: block;
     background-color: #fff;
@@ -95,7 +96,6 @@ body {
                 margin: 0 10px
             }
             &>div:nth-child(1) {
-                // flex: 2;
                 width: 40px;
                 height: 40px;
                 img {
@@ -127,13 +127,15 @@ body {
             width: 100%;
             color: var(--primary);
             background-color: var(--brightBlue);
+            box-shadow: 0px 10px 10px rgba(40, 33, 74, 0.386);
         }
     }
 }
 
-@media(max-width: 375) {
+@media(max-width: 375px) {
     .card {
-        width: 95%;
+        position: relative;
+        width: var(--width);
         margin: 50px auto;
         overflow: hidden;
         border-radius: 10px;
