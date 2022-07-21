@@ -13,6 +13,18 @@
   --fontWeightSm: 500;
 }
 
+.greyColor {
+  color: var(--desaturatedBlue);
+}
+
+.fW-big {
+  font-weight: var(--fontWeightBig);
+}
+
+.fs-2x {
+  font-size: 15px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -32,6 +44,10 @@ a {
 
 .a {
   font-weight: var(--fontWeightBig);
+}
+
+.ch {
+  font-size: 13px;
 }
 
 .span {
@@ -54,7 +70,9 @@ body {
   background-color: #fff;
   overflow: hidden;
   border-radius: 20px;
-  box-shadow: 10px 10px 100px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 19px 60px -17px rgba(0, 0, 0, 0.58);
+  -webkit-box-shadow: 0px 19px 60px -17px rgba(0, 0, 0, 0.58);
+  -moz-box-shadow: 0px 19px 60px -17px rgba(0, 0, 0, 0.58);
 }
 .card .cardHeader {
   position: relative;
@@ -121,7 +139,9 @@ body {
   width: 100%;
   color: var(--primary);
   background-color: var(--brightBlue);
-  box-shadow: 0px 10px 10px rgba(40, 33, 74, 0.386);
+  box-shadow: 0px 4px 60px -5px rgba(82, 41, 105, 0.8);
+  -webkit-box-shadow: 0px 4px 60px -5px rgba(82, 41, 105, 0.8);
+  -moz-box-shadow: 0px 4px 60px -5px rgba(82, 41, 105, 0.8);
 }
 
 @media (max-width: 375px) {
